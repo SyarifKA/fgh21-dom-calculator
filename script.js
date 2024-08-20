@@ -79,7 +79,7 @@ Array.from(button).forEach((btn) => {
         if (event.currentTarget.textContent === ('+/-')) {
             if (result.textContent.includes('+') === true) {
                 let arrNum = result.textContent.slice(0, -3).split('+')
-                console.log(arrNum)
+                // console.log(arrNum)
                 let calc = []
                 arrNum.forEach((elem, idx, arr) => {
                     if (idx === arr.length - 1) {
@@ -89,7 +89,7 @@ Array.from(button).forEach((btn) => {
                         calc.push(elem)
                     }
                 })
-                const strResult = calc.join('+')
+                let strResult = calc.join('+')
                 result.textContent = strResult
             }
         }
